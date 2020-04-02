@@ -1,0 +1,26 @@
+.App {
+  margin: 20px auto;
+  width: 800px;
+}
+
+.headline {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: #00f;
+}
+
+.posts-table {
+  width: 800px;
+  margin: 10px auto;
+}
+
+.posts-table th {
+  text-align: left;
+}
+
+.posts-table td {
+  padding: 4px;
+  text-align: left;
+  vertical-align: top;
+}
