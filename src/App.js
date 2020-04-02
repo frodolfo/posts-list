@@ -7,11 +7,16 @@ class App extends Component {
     posts: []
   };
 
-  // Random number generator
+  /**
+   * Random number generator
+   */
   generateRandomNumber() {
     return Math.round(1 + Math.random() * (1000 - 1));
   }
 
+  /**
+   * Client ID generator
+   */
   assignClientId() {
     const clientId = this.generateRandomNumber();
     // Store clientId in local storage
@@ -20,6 +25,9 @@ class App extends Component {
     return clientId;
   }
 
+  /**
+   * Retrieves the post data from either local storage or remote API
+   */
   retrievePostsData() {
     const postsData = localStorage.getItem("posts.data");
 
@@ -101,8 +109,8 @@ class App extends Component {
             <tr>
               <th>Title</th>
               <th>Body</th>
-              <th>Username</th>
-              <th>City</th>
+              <th>Created by</th>
+              <th>Location</th>
             </tr>
           </thead>
           <tbody>
